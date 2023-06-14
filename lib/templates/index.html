@@ -1,0 +1,24 @@
+{% extends 'template.html' %}
+
+{% block title %}Biblioteca{% endblock %}
+
+{% block content %}
+    <h2 class="page-title">Lista de Libros</h2>
+    <ul class="book-list">
+        {% for book in books %}
+            <li>
+                <a href="/libro/{{ book.isbn }}">
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="{{ book.thumbnailUrl }}" alt="{{ book.title }}" class="book-thumbnail">
+                        </div>
+                        <div class="book-details">
+                            <h3>{{ book.title }}</h3>
+                            <p class="book-authors">Autor(es): {{ book.authors|join(', ') }}</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

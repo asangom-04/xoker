@@ -1,0 +1,155 @@
+/* Reset de estilos */
+html, body, ul, ol, li, h1, h2, h3, p, figure, figcaption, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.site-navigation li {
+    margin-left: 20px;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.book-card:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.book-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-details h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.book-authors {
+    color: #888;
+    font-size: 14px;
+}
+
+.book-detail {
+    display: flex;
+    align-items: center;
+}
+
+.book-thumbnail-container {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.book-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-details p {
+    margin-bottom: 10px;
+}
+
+.book-meta {
+    font-size: 14px;
+    color: #888;
+}
+
+.book-description {
+    line-height: 1.5;
+}
+
+.book-status {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+.category-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-list li {
+    margin: 10px;
+}
+
+.category-link {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.category-link:hover {
+    background-color: #f8f8f8;
+}
+
+.site-footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
